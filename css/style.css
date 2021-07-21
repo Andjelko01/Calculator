@@ -1,14 +1,17 @@
 *{
     font-family: 'Space Mono', monospace !important;
+    font-weight: bold;
     
 }
 body{
     background-color: hsl(185, 41%, 84%) !important;
 }
 form{
-    background-color:  hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
+}
+.background-style{
+    background-color:  hsl(0, 0%, 100%);
     padding: 20px;
     border-radius: 3%;
     box-shadow: 5px 5px 36px -22px #000000;
@@ -19,14 +22,10 @@ body input {
     color:hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
-
 .logo{
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    display:block;
+    margin: 100px auto;
 }
-
 input[type=number]
 {
     text-align: right;
@@ -50,8 +49,7 @@ input[type=button]
     text-align: center;
     color: white;
     width: 100px;
-    border:none;
-    
+    border:none; 
 }
 input[type=button]:hover
 {
@@ -63,9 +61,8 @@ input[type=button]:hover
     width: 100px;
     border:none;
 }
-.row{
-    
-    flex-wrap: nowrap !important;
+.input{
+    display: inline-block;
 }
 #row-button{
     margin-top: 10px;
@@ -90,6 +87,7 @@ input[type=button]:hover
     margin-left: 10px;
     border-radius:3%;
     width: 20em !important;
+    display: inline-block;
 }
 .result h2{
     color: white;
@@ -122,19 +120,23 @@ input[type=button]:hover
     margin-left: 10px;
 }
 
+/*END OF RIGHT*/
+
+
 .attribution { font-size: 11px; text-align: center; display: block; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* ICON IN INPUT*/
 .row img {
     position: absolute;
+    display: block;
 }
-  
 .input-icons {
     width: 100%;
     margin-bottom: 20px;
-}
+} 
 .icon {
     padding: 10px;
     min-width: 20px;
+
 }
