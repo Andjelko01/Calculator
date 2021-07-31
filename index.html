@@ -19,30 +19,30 @@
             <div class="input-icons">
               <label for="bill">Bill</label>
               <img src="images/icon-dollar.svg" alt="" class="icon">
-              <input type="number" placeholder="0">
+              <input type="number" placeholder="0" id="billVal">
             </div> 
             <div class="btn-pick">
                 <label for="bill">Select Tip %</label>
                 <div class="container">
                   <div class="row" id="row-button">
                     <div class="col-md-4">
-                      <input type="button" value="5%">
+                      <input type="button" id="btn5" value="5" onclick="izracunajTip(this)">
                     </div>
                     <div class="col-md-4">
-                      <input type="button" value="10%">
+                      <input type="button" value="10" onclick="izracunajTip(this)">
                     </div>
                     <div class="col-md-4">
-                      <input type="button" value="15%">
+                      <input type="button" value="15" onclick="izracunajTip(this)">
                     </div>
                   </div>
                 </div>
                 <div class="container">
                   <div  class="row"  id="row-button">
                     <div class="col-md-4">
-                      <input type="button" value="25%">
+                      <input type="button" value="25" onclick="izracunajTip(this)">
                     </div>
                     <div class="col-md-4">
-                      <input type="button" value="50%">
+                      <input type="button" value="50" onclick="izracunajTip(this)">
                     </div>
                     <div class="col-md-4">
                       <input type="number" id="custom" placeholder="Custom">
@@ -53,7 +53,7 @@
             <div class="input-icons">
               <label for="numForPlp">Number of People</label>
               <img src="images/icon-person.svg" alt="" class="icon">
-              <input type="number" placeholder="0">
+              <input type="number" placeholder="0" id="peopleVal">
             </div>  
         </div>
         <div class="col-md-6 result">
@@ -63,7 +63,7 @@
               <h3 class="subtitle">/ person</h3>
             </div>
             <div class="col-md-6">
-              <p class="price"> 0,00 $</p>
+              <p class="price" id="tipamount"> 0,00 $</p>
             </div>
           </div>
           <div class="col-md-12">
@@ -73,13 +73,14 @@
                 <h3 class="subtitle" >/ person</h3>
               </div>
               <div class="col-md-6">
-                <p class="price"> 0,00 $</p>
+                <p class="price" id="total"> 0,00 $</p>
               </div>
             </div>
-        <button type="reset">RESET</button>
+        <button type="reset" onclick="resetbutton()">RESET</button>
         </div>
     </div>
     </form>
   </div>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
