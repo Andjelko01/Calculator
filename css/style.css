@@ -81,7 +81,6 @@ input[type=button]:hover
 }
 .input{
     display: block;
-    /*width: 40% !important; zbog ovog mi pravi skroz desno prazno*/
     float: left;
     width: auto;
 }
@@ -113,9 +112,9 @@ input[type=button]:hover
     padding: 30px;
     margin-left: 40px;
     border-radius:3%;
-    width:40% !important;
+    width:350px !important;
     display: inline-block;
-    height: 100%;
+    height:21em;
 }
 .result h2{
     color: white;
@@ -156,6 +155,9 @@ input[type=button]:hover
     margin-top: 10px !important;
 }
 
+.half{
+    width: 50% !important;
+}
 /*END OF RIGHT*/
 
 
@@ -163,7 +165,7 @@ input[type=button]:hover
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* ICON IN INPUT*/
-.row img {
+.input-icons img {
     position: absolute;
     display: block;
 }
@@ -180,4 +182,16 @@ input[type=button]:hover
 /*END ICON IN INPUT*/
 
 
+/* MEDIA QUERY */
 
+@media only screen and (max-width: 600px) {
+    .result{
+        background-color: hsl(183, 100%, 15%);
+        padding: 30px;
+        margin-left: 0px;
+        border-radius:3%;
+        width:100% !important;
+        display: inline-block;
+        height: auto;
+    }
+}
